@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #222;
+  margin: 0;
+}
+
+.bulb {
+  position: relative;
+}
+
+.base {
+  width: 40px;
+  height: 20px;
+  background: #222;
+  border: 1px solid #111;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.glass {
+  width: 80px;
+  height: 120px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wire {
+  width: 4px;
+  height: 80px;
+  background: #111;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-2px);
+}
+
+.filament {
+  width: 40px;
+  height: 40px;
+  background: #f9b90e;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-20px);
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.8;
+  }
+}

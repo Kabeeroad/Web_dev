@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      width: 250px;
+      height: 250px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #000;
+    }
+    button {
+      margin: 15px 7%;
+      font-size: 30px;
+      color: red;
+    }
+    boy{
+      
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="main"></div>
+    <button>OFF</button>
+
+          <script>
+      var maindiv = document.querySelector(".main");
+      var btn = document.querySelector("button");
+      var tem = 0;
+      btn.addEventListener("click", function () {
+        if (tem == 0) {
+          maindiv.style.backgroundColor = "yellow";
+          btn.style.color = "blue";
+          tem = 1;
+        } else {
+          maindiv.style.backgroundColor = "transparent";
+          btn.style.color = "red";
+          tem = 0;
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilro";
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  height: 100%;
+  width: 100vh;
+  /* background-color: black; */
+}
+
+#back {
+  height: 100%;
+  width: 100vw;
+}
+#back img{
+  width: 100vw;
+  height: 100%;
+  /* object-fit: cover; */
+}
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #000000; */
+}
+#workingarea {
+  position: relative;
+  margin: 0 auto;
+  width: 90%;
+  height: 100vh;
+  max-width: 1920px;
+  /* border: 1px solid red; */
+}
+#nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+#nav,
+img {
+  height: 60px;
+}
+#left-nav,
+#right-nav {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+#nav a {
+  pointer-events: all;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffff;
+}
+#hero {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  transform: translate(0%, -50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  /* background-color: red; */
+}
+#left-hero {
+  min-width: 50%;
+}
+#left-hero .elem {
+  overflow: hidden;
+  position: relative;
+  height: 9vw;
+  /* background-color: red; */
+}
+#left-hero .elem h1:nth-child(1){
+  top: 0;
+}
+#left-hero .elem h1 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  line-height: 0.9;
+  font-family: "kajiro";
+  font-weight: 100;
+  font-size: 11vw;
+  color: #ffff;
+}
+#left-hero button {
+  pointer-events: all;
+  padding: 0.8vw 3vw;
+  font-family: "kajiro";
+  font-size: 4vw;
+  margin-top: 3vw;
+}
+#right-hero {
+  display: flex;
+  width: 100%;
+  /* background-color: yellow; */
+  color: #ffff;
+
+  align-items: flex-end;
+  flex-direction: column;
+}
+#right-hero p {
+  
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+  width: 65%;
+}
+#right-hero p:nth-last-child(2){
+  margin-bottom: 50px;
+}
+
+#right-hero #image-dive{
+  width: 40%;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+ background-image: url(https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+ background-size: cover;
+ background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+

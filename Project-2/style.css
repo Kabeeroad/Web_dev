@@ -352,6 +352,67 @@ video {
   font-weight: 900;
   -webkit-text-stroke: 1px #fff;
 }
+
+.popup-container {
+  height: 60%;
+  width: 30vw;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ background-color: #95c11e;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+ /* color: #000; */
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.popup-container h2 {
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 900;
+}
+.popup-container p {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 800;
+  color: #000;
+}
+
+.close-btn {
+  cursor: pointer;
+  position: absolute;
+  
+  top: 10px;
+  right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.close-btn:hover {
+  color: #ff0000;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+  color: #000;
+}
+
 #footer {
   height: 40vh;
   width: 100%;

@@ -1,0 +1,87 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  /* height: 100px; */
+  width: 500px;
+}
+
+.usms-logo {
+  width: 70px;
+  height: 70px;
+}
+
+.usms-name {
+  font-variant: small-caps;
+}
+
+.usms1 {
+  display: block;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  margin: 0px 5px;
+  padding: 8px 12px;
+  height: fit-content;
+  border-radius: 8px;
+  transition: 0.3s linear;
+}
+
+ul li::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 3px;
+  width: 0px;
+  background-color: #000;
+  transition: 0.5s ease-in-out;
+}
+
+ul li:hover::after {
+  width: 100%;
+}
+
+.menu-items {
+  display: flex;
+}
+
+#dpt-dropdown {
+  position: absolute;
+  top: 35px;
+  display: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px 5px;
+  width: 150px;
+}
+
+ul li:hover #dpt-dropdown {
+  display: block;
+}
+
+#dpt-dropdown li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#dpt-dropdown li img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}

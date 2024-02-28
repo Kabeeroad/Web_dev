@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lab</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./dpt/dpt.css" />
+    <link rel="stylesheet" href="./styles/navbar.style.css" />
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -19,23 +21,87 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
-    <div class="navbar">
-      <div class="logo">
-        <img src="assets/logo.enc" alt="" />
-        <h2>university of sufisum and modern science</h2>
+    <nav>
+      <div class="logo-wrapper">
+        <img class="usms-logo" src="assets/logo.enc" alt="" />
+        <h2 class="usms-name">
+          <span class="usms1"> University Of Sufism </span>
+          <span class="usms2"> And Modern Sciences </span>
+        </h2>
       </div>
-      <a href="#home">Home</a>
+      <ul class="menu-items">
+        <li>
+          <a id="menu-item-home" href="#">Home</a>
+        </li>
+        <li>
+          <a id="menu-item-dpt" href="#">Departement</a>
+          <ul id="dpt-dropdown">
+            <li id="menu-dpt-bsit">
+              <img src="https://img.icons8.com/clouds/100/technology.png" />
+              <a href="#">BSIT</a>
+            </li>
+            <li id="menu-dpt-bscs">
+              <img src="https://img.icons8.com/clouds/100/technology.png" />
+              <a href="#">BSCS</a>
+            </li>
+            <li id="menu-dpt-bsse">
+              <img src="https://img.icons8.com/clouds/100/technology.png" />
+              <a href="#">BSSE</a>
+            </li>
+            <li id="menu-dpt-bed">
+              <img src="https://img.icons8.com/clouds/100/technology.png" />
+              <a href="#">B.Ed</a>
+            </li>
+            <li id="menu-dpt-bba">
+              <img src="https://img.icons8.com/clouds/100/technology.png" />
+              <a href="#">BBA</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a id="menu-item-timetable" href="#">TimeTable</a>
+        </li>
+        <li>
+          <a id="menu-item-courses" href="#">Courses</a>
+        </li>
+        <li>
+          <a id="menu-item-gallery" href="#">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- 
+    <div class="navbar">
+      <a href="#home"> Home</a>
       <div class="dropdown">
         <button class="dropbtn">
           Departement <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>
         </button>
 
         <div class="dropdown-content">
-          <a href="#link1"><i class="fa-regular fa-microchip"></i> IT</a>
-          <a href="#link2">CS</a>
-          <a href="#link3">BBA</a>
-          <a href="#link3">Bed</a>
+          <a id="bsit-depart-menu-btn" href="it.html"> BSIT</a>
+          <a id="bscs-depart-menu-btn" href="#"
+            ><img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-computer-science-computer-science-flaticons-lineal-color-flat-icons.png"
+              alt="external-computer-science-computer-science-flaticons-lineal-color-flat-icons"
+            />
+            BSCS</a
+          >
+
+          <a href="bba"
+            ><img
+              src="https://img.icons8.com/color/48/business-goal.png"
+              alt="business-goal"
+            />
+            BBA
+          </a>
+          <a href="bse">
+            <img
+              src="https://img.icons8.com/parakeet/48/engineering.png"
+              alt="engineering"
+            />BSE</a
+          >
         </div>
       </div>
       <div class="dropdown">
@@ -43,9 +109,31 @@
           Timetable <i class="fa-sharp fa-solid fa-circle-chevron-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#link1">IT</a>
-          <a href="#link2">BBA</a>
-          <a href="#link3">CS</a>
+          <a href="it.html">
+            <img
+              src="https://img.icons8.com/clouds/100/technology.png"
+            />BSIT</a
+          >
+          <a href="cs"
+            ><img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-computer-science-computer-science-flaticons-lineal-color-flat-icons.png"
+              alt="external-computer-science-computer-science-flaticons-lineal-color-flat-icons"
+            />
+            BSCS</a
+          >
+          <a href="bba"
+            ><img
+              src="https://img.icons8.com/color/48/business-goal.png"
+              alt="business-goal"
+            />
+            BBA
+          </a>
+          <a href="bse">
+            <img
+              src="https://img.icons8.com/parakeet/48/engineering.png"
+              alt="engineering"
+            />BSE</a
+          >
         </div>
       </div>
       <div class="dropdown">
@@ -59,13 +147,164 @@
         </div>
       </div>
       <a href="#">Gallery</a>
+    </div> -->
+    <!-- <div id="cursor"></div>
+    <div id="cursor-blur"></div> -->
+    <div class="main">
+      <div class="homepage">
+        <h1>homepage</h1>
+      </div>
+
+      <div id="cs-page" class="dpt-page">
+        <div class="heading">
+          <h1>BS Computer Science</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            blanditiis a recusandae qui dignissimos. Aliquid?
+          </p>
+        </div>
+        <div class="boxses">
+          <div class="box1">
+            <img
+              src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/overview-pages-2.png"
+              alt="overview-pages-2"
+            />
+            <h3>overview</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              neque est cumque dignissimos, explicabo molestias?
+            </p>
+          </div>
+          <div class="box2">
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-jobs-job-search-flaticons-lineal-color-flat-icons-7.png"
+              alt="external-jobs-job-search-flaticons-lineal-color-flat-icons-7"
+            />
+            <h3>jobs</h3>
+            <p>
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+              adipi consectetur adipisicing elit. Numquam facilis excepturi,
+              minima at enim alias!
+            </p>
+          </div>
+        </div>
+        <div class="icons"></div>
+        <button>Learn more</button>
+      </div>
+      <div id="se-page" class="dpt-page">
+        <div class="heading">
+          <h1>software engineering</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            blanditiis a recusandae qui dignissimos. Aliquid?
+          </p>
+        </div>
+        <div class="boxses">
+          <div class="box1">
+            <img
+              src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/overview-pages-2.png"
+              alt="overview-pages-2"
+            />
+            <h3>overview</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              neque est cumque dignissimos, explicabo molestias?
+            </p>
+          </div>
+          <div class="box2">
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-jobs-job-search-flaticons-lineal-color-flat-icons-7.png"
+              alt="external-jobs-job-search-flaticons-lineal-color-flat-icons-7"
+            />
+            <h3>jobs</h3>
+            <p>
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+              adipi consectetur adipisicing elit. Numquam facilis excepturi,
+              minima at enim alias!
+            </p>
+          </div>
+        </div>
+        <div class="icons"></div>
+        <button>Learn more</button>
+      </div>
+      <div id="bba-page" class="dpt-page">
+        <div class="heading">
+          <h1>Bachelor of Business Administration</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            blanditiis a recusandae qui dignissimos. Aliquid?
+          </p>
+        </div>
+        <div class="boxses">
+          <div class="box1">
+            <img
+              src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/overview-pages-2.png"
+              alt="overview-pages-2"
+            />
+            <h3>overview</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              neque est cumque dignissimos, explicabo molestias?
+            </p>
+          </div>
+          <div class="box2">
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-jobs-job-search-flaticons-lineal-color-flat-icons-7.png"
+              alt="external-jobs-job-search-flaticons-lineal-color-flat-icons-7"
+            />
+            <h3>jobs</h3>
+            <p>
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+              adipi consectetur adipisicing elit. Numquam facilis excepturi,
+              minima at enim alias!
+            </p>
+          </div>
+        </div>
+        <div class="icons"></div>
+        <button>Learn more</button>
+      </div>
+      <div id="bed-page" class="dpt-page">
+        <div class="heading">
+          <h1>Bachelor of Education</h1>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            blanditiis a recusandae qui dignissimos. Aliquid?
+          </p>
+        </div>
+        <div class="boxses">
+          <div class="box1">
+            <img
+              src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/overview-pages-2.png"
+              alt="overview-pages-2"
+            />
+            <h3>overview</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+              neque est cumque dignissimos, explicabo molestias?
+            </p>
+          </div>
+          <div class="box2">
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-jobs-job-search-flaticons-lineal-color-flat-icons-7.png"
+              alt="external-jobs-job-search-flaticons-lineal-color-flat-icons-7"
+            />
+            <h3>jobs</h3>
+            <p>
+              Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur
+              adipi consectetur adipisicing elit. Numquam facilis excepturi,
+              minima at enim alias!
+            </p>
+          </div>
+        </div>
+        <div class="icons"></div>
+        <button>Learn more</button>
+      </div>
     </div>
-    <div class="home"></div>
-    <div class="departement">
-      <div class="it"></div>
-      <div class="cs"></div>
-      <div class="bba"></div>
-      <div class="bed"></div>
-    </div>
+
+    <script src="./main.js"></script>
   </body>
 </html>

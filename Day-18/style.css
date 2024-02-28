@@ -141,8 +141,8 @@ body {
   opacity: 0.5;
 }
 .weblogo:hover {
-  transform: scale(1.1);
-  filter: brightness(80%);
+  /* transform: scale(1.1);
+  filter: brightness(80%); */
   opacity: 1;
 }
 .desc {

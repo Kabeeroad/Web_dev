@@ -1,0 +1,74 @@
+.main {
+  padding: 0px;
+  margin: 0px;
+  height: 90vh;
+  background-color: #ccc;
+}
+
+.dpt-page {
+  display: none;
+  padding: 30px;
+}
+
+.active {
+  display: block;
+}
+
+.dpt-heading {
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.dpt-description {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.boxses {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.box h3 {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.learn-more-btn {
+  padding: 10px 20px;
+  margin: 20px auto;
+  width: fit-content;
+
+  border: 1px solid #222;
+  border-radius: 8px;
+
+  background-color: #fff;
+  cursor: pointer;
+
+  box-shadow: 0px 10px 20px #00000071;
+  transition: 0.3s ease-in;
+}
+
+.learn-more-btn:hover {
+  background-color: #222;
+  font-weight: 700;
+  color: #fff;
+}

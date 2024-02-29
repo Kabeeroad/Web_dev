@@ -10,16 +10,18 @@ body {
   width: 100%;
 }
 /* Add a black background color to the top navigation */
+
+/* 
 .navbar {
   overflow: hidden;
   display: flex;
   padding: 10px 20px;
   width: 100%;
   background: linear-gradient(to right, rgb(214, 65, 182), rgb(235, 143, 143));
-  /* gap: 5px; */
+  gap: 5px;
   justify-content: flex-end;
   align-items: center;
-  /* position: fixed; */
+  position: fixed;
   z-index: 99;
 }
 #cursor {
@@ -89,11 +91,13 @@ body {
 
 .dropdown-content a {
   float: none;
-  /* padding: 12px 16px; */
+
+  padding: 12px 16px;
   text-decoration: none;
   display: flex;
   align-items: center;
-  /* text-align: center; */
+
+  text-align: center;
   color: black;
   font-size: 20px;
   font-weight: bold;
@@ -127,9 +131,7 @@ body {
   height: 85vh;
   width: 100%;
 
-  /* background-color: rgb(234, 238, 13); */
   display: none;
-  /* z-index: -2; */
 }
 
 .dpt-page {
@@ -140,7 +142,6 @@ body {
   text-align: center;
   background-color: #c11e1e;
 
-  /* display: none; */
   opacity: 0;
 }
 
@@ -148,4 +149,4 @@ body {
   opacity: 1;
   display: block;
   z-index: -1;
-}
+} */

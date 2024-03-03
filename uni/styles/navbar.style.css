@@ -1,9 +1,12 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0px;
-  padding: 10px;
+  padding: 5px;
+  z-index: 99;
+  /* position: absolute; */
+  position: relative;
 }
 
 a {
@@ -13,13 +16,16 @@ a {
 .logo-wrapper {
   display: flex;
   align-items: center;
-  /* height: 100px; */
-  width: 500px;
+
+  margin-left: 50px;
+
+  /* background-color: red; */
 }
 
 .usms-logo {
   width: 70px;
   height: 70px;
+  border-radius: 50px;
 }
 
 .usms-name {
@@ -33,13 +39,17 @@ a {
 ul li {
   position: relative;
   list-style: none;
-  margin: 0px 5px;
-  padding: 8px 12px;
+  margin: 0px 0px;
+  padding: 10px 10px;
   height: fit-content;
   border-radius: 8px;
   transition: 0.3s linear;
 }
+li a {
+  color: black;
 
+  font-weight: bold;
+}
 ul li::after {
   position: absolute;
   bottom: 0;
@@ -47,7 +57,7 @@ ul li::after {
   content: "";
   height: 3px;
   width: 0px;
-  background-color: #000;
+  background-color: rgb(159, 140, 177);
   transition: 0.5s ease-in-out;
 }
 
@@ -61,31 +71,46 @@ ul li:hover::after {
 
 #dpt-dropdown {
   position: absolute;
-  top: 30px;
-  left: 20px;
+  top: 40px;
+  left: 0px;
   display: none;
-  /* border: 1px solid #aaa; */
+
   box-shadow: 0px 10px 20px #00000071;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #fff1f1;
   padding: 10px 5px;
-  width: 150px;
 }
 
 ul li:hover #dpt-dropdown,
 ul li #dpt-dropdown:hover {
   display: block;
 }
+ul button {
+  width: 100px;
+  border-radius: 12px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  /* border: none; */
+  border: 1px solid rgb(41, 40, 40);
 
+  margin: 0px 30px;
+  transition: ease-in-out 0.5s;
+}
+ul button:hover {
+  border: none;
+  background-color: #ff5720;
+}
 #dpt-dropdown li {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 10px;
 }
 
 #dpt-dropdown li img {
   width: 30px;
   height: 30px;
   margin-right: 5px;
+  background-color: rgb(129, 150, 150);
+  border-radius: 5px;
 }

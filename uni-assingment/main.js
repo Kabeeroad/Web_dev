@@ -7,7 +7,7 @@ const menuBtnBba = document.getElementById("menu-dpt-bba");
 const menutimetable = document.getElementById("menu-item-timetable");
 const menuitemcourses = document.getElementById("menu-item-courses");
 const menuitemgallery = document.getElementById("menu-item-gallery");
-
+// const timepage = document.getElementsByClassName("time-page");
 const home = document.getElementById("home-page");
 const itPage = document.getElementById("it-page");
 const csPage = document.getElementById("cs-page");

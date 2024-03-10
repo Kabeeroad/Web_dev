@@ -11,18 +11,9 @@ body {
   background-image: linear-gradient(to right, #fbe9e9, #dfcaf7, #cadcfd);
 }
 .main {
+  position: relative;
   width: 100%;
   height: 100vh;
-}
-
-.dpt-page {
-  display: none;
-  padding: 25px;
-  /* background-color: red; */
-}
-
-.active {
-  display: block;
 }
 
 .dpt-heading {
@@ -103,11 +94,23 @@ body {
   color: #fff;
 }
 /* ======================================================= */
-#home-page {
+.home-page {
+  position: absolute;
   display: flex;
   /* flex-direction: row; */
   margin-top: 20px;
 }
+
+.dpt-page {
+  display: none;
+  padding: 25px;
+  /* background-color: red; */
+}
+
+.active {
+  display: block;
+}
+
 .left-side {
   padding: 20px;
   margin-left: 30px;
@@ -179,10 +182,75 @@ h3 {
   width: 450;
   height: 470px;
   position: absolute;
+
+  animation: 0.8s slideRight ease-in-out;
 }
+
+@keyframes slideRight {
+  from {
+    top: 170px;
+    left: 700px;
+  }
+  to {
+    top: 10px;
+    left: 330px;
+  }
+}
+
 footer {
   height: 50px;
 
   width: 100%;
   background-color: #222;
+}
+
+/* =============== timetable============ */
+.nav-page {
+  display: none;
+}
+
+table {
+  width: 90%;
+  padding: 40px;
+  border-collapse: collapse;
+  border: 4px solid black;
+}
+th,
+td {
+  border: 2px solid #181616;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: transparent;
+}
+.time-boxes {
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.courese {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+
+.card1 img {
+  width: 200px;
+  height: 200px;
 }

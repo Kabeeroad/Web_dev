@@ -109,6 +109,7 @@ body {
 
 .active {
   display: block;
+  /* display: none; */
 }
 
 .left-side {
@@ -230,27 +231,94 @@ th {
   flex-wrap: nowrap;
   justify-content: center;
 }
-
-.courese {
-  display: flex;
+.coureses {
+  align-items: self-start;
   justify-content: center;
+  margin-top: 30px;
+}
+
+.intro {
   align-items: center;
   text-align: center;
-  flex-direction: column;
 }
 .cards {
-  display: flex;
+  align-items: self-start;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+}
+.cards {
+  /* text-align: center; */
+  position: relative;
 }
 
 .card1 {
-  margin: 0 10px;
-  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+
+  border: 2px solid #e5d1f4;
+  padding: 10px;
+  border-top-left-radius: 20px;
+}
+.card2 {
+  margin: 20px;
+  /* margin-top: 120px; */
+  padding: 10px;
+  height: 50%;
+  width: 20%;
+  background-color: rgb(255, 255, 255);
+
+  border: 2px solid #e5d1f4;
+}
+.card3 {
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+
+  border: 2px solid #e5d1f4;
 }
 
 .card1 img {
-  width: 200px;
-  height: 200px;
+  width: 80px;
+  height: 80px;
+}
+.imgbox {
+  border: 2px solid rgb(226, 187, 187);
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  width: 30%;
+  height: 40%;
+  margin: 5px;
+}
+.events {
+  display: flex;
+  justify-content: center;
+}
+.news {
+  display: flex;
+  justify-content: center;
+}
+.imgbox img {
+  height: 150px;
+  /* height: 30%; */
+  width: 380px;
+  /* justify-content: center; */
+  /* width: 30%; */
+}
+
+.gallery {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: #ff5720; */
+  display: none;
+}
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
